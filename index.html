@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Command Gen</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/minecraft-framework-css@1.1.9/css/main.css">
+    <script src="https://unpkg.com/minecraft-framework-css@1.1.9/css/assets/script.js"></script>
+    <script type="text/javascript" src="js/ebaDirectives.js"></script>
+    <script type="text/javascript" src="js/enchantsScripts.js"></script>
+    <script type="text/javascript" src="js/others.js"></script>
+</head>
+<body>
+
+<div class="d-flex">
+    <button class="mx-2 button-java" onclick="eba_visibilite('sword'); return false;">Sword</button>
+    <button class="mx-2 button-java" onclick="eba_visibilite('pickaxe'); return false;">Pickaxe</button>
+    <button class="mx-2 button-java" onclick="eba_visibilite('axe'); return false;">Axe</button>
+    <button class="mx-2 button-java" onclick="eba_visibilite('shovel'); return false;">Shovel</button>
+    <button class="mx-2 button-java" onclick="eba_visibilite('hoe'); return false;">Hoe</button>
+    <button class="mx-2 button-java" onclick="eba_visibilite('armors'); return false;">Armors</button>
+    <button class="mx-2 button-java" onclick="eba_visibilite('others'); return false;">others</button>
+</div>
+
+<div id="sword" class="eba-visibilite-Element" style="display: none">
+    <div eba-directive="html/sword.html"></div>
+</div>
+<div id="pickaxe" class="eba-visibilite-Element" style="display: none">
+    <div eba-directive="html/pickaxe.html"></div>
+</div>
+<div id="axe" class="eba-visibilite-Element" style="display: none">
+    <div eba-directive="html/axe.html"></div>
+</div>
+<div id="shovel" class="eba-visibilite-Element" style="display: none">
+    <div eba-directive="html/wip.html"></div>
+</div>
+<div id="hoe" class="eba-visibilite-Element" style="display: none">
+    <div eba-directive="html/wip.html"></div>
+</div>
+<div id="armors" class="eba-visibilite-Element" style="display: none">
+    <div eba-directive="html/armors.html"></div>
+</div>
+<div id="others" class="eba-visibilite-Element" style="display: none">
+    <div eba-directive="html/others.html"></div>
+</div>
+
+
+<div class="d-flex">
+    <br><br>
+    <label for="outputCommand">commande générée : </label>
+    <textarea rows="10" cols="43" id="outputCommand" disabled></textarea>
+</div>
+<button class="button-java" onclick="copyValue(document.getElementById('outputCommand').value)">copy command</button><br>
+
+<script> 
+    Eba_Directive();
+</script>
+
+</body>
+</html>

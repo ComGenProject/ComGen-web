@@ -1,0 +1,28 @@
+<label for="inputArmorPart">select armor part : </label>
+<select id="inputArmorPart">
+    <option value="_helmet">Helmet</option>
+    <option value="_chestplate">Chest</option>
+    <option value="_leggings">Leggings</option>
+    <option value="_boots">Boots</option>
+</select><br>
+
+<label for="inputArmorMaterial">select armor material : </label>
+<select id="inputArmorMaterial">
+    <option value="wooden">Wood</option>
+    <option value="iron">Iron</option>
+    <option value="golden">Gold</option>
+    <option value="diamond">Diamond</option>
+    <option value="netherite">Netherite</option>
+</select><br>
+
+<label for="inputArmorUsername">Username : </label>
+<input type="text" id="inputArmorUsername" placeholder="@p"><br>
+
+<label for="inputIsProtection">protection V : </label>
+<input type="checkbox" id="inputIsProtection"><br>
+
+<button class="button-java" onclick="generateArmorCommand(document.getElementById('inputArmorPart').value,
+                                      document.getElementById('inputArmorMaterial').value,
+                                      document.getElementById('inputArmorUsername').value,)">
+    Generate Command
+</button>

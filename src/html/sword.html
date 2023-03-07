@@ -1,0 +1,56 @@
+<label for="inputSwordMaterial">select sword material : </label>
+<select id="inputSwordMaterial">
+  <option value="wooden">Wood</option>
+  <option value="iron">Iron</option>
+  <option value="golden">Gold</option>
+  <option value="diamond">Diamond</option>
+  <option value="netherite">Netherite</option>
+</select><br>
+
+<label for="inputSwordUsername">Username : </label>
+<input type="text" id="inputSwordUsername" placeholder="@p"><br>
+
+<label for="inputIsSharpness">Sharpness V : </label>
+<input type="checkbox" id="inputIsSharpness"><br>
+
+<label for="inputIsFireAspect">Fire Aspect II : </label>
+<input type="checkbox" id="inputIsFireAspect"><br>
+
+<label for="inputIsBaneOfArthropods">Bane Of Arthropods V : </label>
+<input type="checkbox" id="inputIsBaneOfArthropods"><br>
+
+<label for="inputIsVanishing">Curse Of Vanishing I : </label>
+<input type="checkbox" id="inputIsVanishing"><br>
+
+<label for="inputIsKnockback">Knockback II : </label>
+<input type="checkbox" id="inputIsKnockback"><br>
+
+<label for="inputIsLooting">Looting III : </label>
+<input type="checkbox" id="inputIsLooting"><br>
+
+<label for="inputIsMending">Mending III : </label>
+<input type="checkbox" id="inputIsMending"><br>
+
+<label for="inputIsSmite">Smite V : </label>
+<input type="checkbox" id="inputIsSmite"><br>
+
+<label for="inputIsSweeping">Sweeping III : </label>
+<input type="checkbox" id="inputIsSweeping"><br>
+
+<label for="inputIsUnbreaking">Unbreaking III : </label>
+<input type="checkbox" id="inputIsUnbreaking"><br>
+
+<button class="button-java" onclick="generateSwordCommand(document.getElementById('inputSwordMaterial').value,
+                                     document.getElementById('inputSwordUsername').value,
+                                     document.getElementById('inputIsSharpness').checked,
+                                     document.getElementById('inputIsFireAspect').checked,
+                                     document.getElementById('inputIsBaneOfArthropods').checked,
+                                     document.getElementById('inputIsVanishing').checked,
+                                     document.getElementById('inputIsKnockback').checked,
+                                     document.getElementById('inputIsLooting').checked,
+                                     document.getElementById('inputIsMending').checked,
+                                     document.getElementById('inputIsSmite').checked,
+                                     document.getElementById('inputIsSweeping').checked,
+                                     document.getElementById('inputIsUnbreaking').checked)">
+  Generate Command
+</button>

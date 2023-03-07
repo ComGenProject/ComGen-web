@@ -1,0 +1,40 @@
+<label for="inputAxeMaterial">select axe material : </label>
+<select id="inputAxeMaterial">
+  <option value="wooden">Wood</option>
+  <option value="iron">Iron</option>
+  <option value="golden">Gold</option>
+  <option value="diamond">Diamond</option>
+  <option value="netherite">Netherite</option>
+</select><br>
+
+<label for="inputAxeUsername">Username : </label>
+<input class="input-text-lg" type="text" id="inputAxeUsername" placeholder="@p"><br>
+
+<label for="inputIsVanish">Curse Of Vanishing III : </label>
+<input type="checkbox" id="inputIsVanish"><br>
+
+<label for="inputIsEfficiency">Efficiency V : </label>
+<input type="checkbox" id="inputIsEfficiency"><br>
+
+<label for="inputIsFortune">Fortune III : </label>
+<input type="checkbox" id="inputIsFortune"><br>
+
+<label for="inputIsMending">Mending I : </label>
+<input type="checkbox" id="inputIsMending"><br>
+
+<label for="inputIsSilkTouch">Silk Touch I : </label>
+<input type="checkbox" id="inputIsSilkTouch"><br>
+
+<label for="inputIsUnbreaking">Unbreaking III : </label>
+<input type="checkbox" id="inputIsUnbreaking"><br>
+
+<button class="button-java" onclick="generateAxeCommand(document.getElementById('inputAxeMaterial').value,
+                                        document.querySelector('#inputAxeUsername').value,
+                                        document.getElementById('inputIsVanish').checked,
+                                        document.getElementById('inputIsEfficiency').checked,
+                                        document.getElementById('inputIsFortune').checked,
+                                        document.getElementById('inputIsMending').checked,
+                                        document.getElementById('inputIsSilkTouch').checked,
+                                        document.getElementById('inputIsUnbreaking').checked)">
+  Generate Command
+</button>
